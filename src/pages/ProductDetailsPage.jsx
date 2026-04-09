@@ -13,7 +13,7 @@ const ProductDetailsPage = () => {
   });
   
   if(isPending) return <ProductsLoader title={"Product Details Loading..."} />;
-  if(isError) return <p>Something went wrong...</p>
+  if(isError) return <p>An error occurred while fetching product details.</p>
 
   return <ProductDetails  productData={data}/>
 };
